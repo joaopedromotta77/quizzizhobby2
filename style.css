@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #063b16,
+            #0b6623,
+            #159447
+        );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #222;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.tela {
+    background-color: #ffffff;
+
+    padding: 45px 35px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3);
+
+    animation: aparecer 0.5s ease;
+}
+
+.bola {
+    font-size: 65px;
+
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #0b6623;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.tela > p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+    color: #555;
+}
+
+.instrucao {
+    margin-bottom: 15px !important;
+}
+
+button {
+    background-color: #0b6623;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 15px 25px;
+
+    margin: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #084d1b;
+
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.desafio {
+    background-color: #e9f7ed;
+
+    border: 3px solid #0b6623;
+
+    border-radius: 18px;
+
+    padding: 35px 20px;
+
+    margin: 25px 0;
+}
+
+#texto-desafio {
+    color: #0b6623;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    line-height: 1.5;
+}
+
+.botao-secundario {
+    background-color: #777;
+}
+
+.botao-secundario:hover {
+    background-color: #555;
+}
+
+.escondido {
+    display: none;
+}
+
+footer {
+    position: fixed;
+
+    bottom: 15px;
+
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+
+    .tela {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .bola {
+        font-size: 50px;
+    }
+
+    #texto-desafio {
+        font-size: 19px;
+    }
+
+    button {
+        width: 90%;
+    }
+
+}

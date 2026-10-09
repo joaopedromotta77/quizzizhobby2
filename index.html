@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafio do Futebol</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Tela inicial -->
+        <section id="tela-inicial" class="tela">
+
+            <div class="bola">⚽</div>
+
+            <h1>Desafio do Futebol</h1>
+
+            <p>
+                Descubra uma missão aleatória relacionada
+                ao seu hobby favorito!
+            </p>
+
+            <button id="btn-iniciar">
+                Começar o desafio
+            </button>
+
+        </section>
+
+
+        <!-- Tela do desafio -->
+        <section id="tela-desafio" class="tela escondido">
+
+            <div class="bola">⚽</div>
+
+            <h1>Seu desafio</h1>
+
+            <p class="instrucao">
+                Prepare-se para o próximo desafio!
+            </p>
+
+            <div class="desafio">
+                <p id="texto-desafio">
+                    Clique no botão abaixo para receber
+                    seu desafio.
+                </p>
+            </div>
+
+            <div class="botoes">
+
+                <button id="btn-desafio">
+                    Gerar desafio
+                </button>
+
+                <button id="btn-novamente">
+                    Jogar novamente
+                </button>
+
+                <button id="btn-voltar" class="botao-secundario">
+                    Voltar
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>⚽ Meu hobby: Futebol</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="apps.js"></script>
+
+</body>
+</html>
